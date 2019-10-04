@@ -29,7 +29,7 @@ namespace SelfWork_8
         /// <param name="e">заданная точность</param>
         static void DichotomyMethod(double a, double b, double e)
         {
-            int n = 1;
+            int n = 0;
             double x,x1, x2, f1, f2;
             double d = (b - a) * e;
             do
@@ -56,7 +56,7 @@ namespace SelfWork_8
         public static void NewtonMethod(double a, double b, double e)
         {
             double x;
-            int n = 1;
+            int n = 0;
             do
             {
                 x = a - Der(a) / DDer(a);
